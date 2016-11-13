@@ -20,9 +20,14 @@ public class Progra2 {
         // TODO code application logic here
         new progra2.Principal().setVisible(true);
         Parte2.Ortonormales obj=new Ortonormales();
-        float[] m={5,2};
-        float[] r={4,-3};
-        obj.proyeccion(m, r);
+        float[] m={1,-1,1};
+        float[] r={-2,3,-1};
+        float[] suma=obj.suma2Vectores(m,m);
+        for (int i = 0; i < suma.length; i++) {
+            System.out.println(r[i]);
+        }
+       obj.euclidiana(obj.resta2Vectores(r,suma));
+       
     }
     
 }

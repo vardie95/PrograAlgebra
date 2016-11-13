@@ -39,5 +39,23 @@ public class Ortonormales {
         System.out.println(punto+"/ "+eu);
         return proyeccion;
     }
+    public float[] suma2Vectores(float[] vector1,float[] vector2){
+        float[] Vfinal =new float[vector1.length];
+        System.out.println(vector1.length);
+            for (int i = 0; i < vector2.length; i++) {
+                Vfinal[i]=vector1[i]+vector2[i];
+                
+        }
+        return Vfinal;
+    }
+    public float[] resta2Vectores(float[] vector1,float[] vector2){
+        float[] Vfinal = new float[vector1.length];;
+            for (int i = 0; i < vector1.length; i++) {
+                Vfinal[i]=vector1[i]-(vector2[i]);
+                System.out.println(vector1[i]+"-"+vector2[i]+"="+Vfinal[i]);
+                
+        }
+        return Vfinal;
+    }
     
 }
