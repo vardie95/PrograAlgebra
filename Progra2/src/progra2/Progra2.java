@@ -22,11 +22,8 @@ public class Progra2 {
         Parte2.Ortonormales obj=new Ortonormales();
         float[] m={1,-1,1};
         float[] r={-2,3,-1};
-        float[] suma=obj.suma2Vectores(m,m);
-        for (int i = 0; i < suma.length; i++) {
-            System.out.println(r[i]);
-        }
-       obj.euclidiana(obj.resta2Vectores(r,suma));
+      
+        
        
     }
     
